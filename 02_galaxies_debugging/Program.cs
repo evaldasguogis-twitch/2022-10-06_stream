@@ -1,5 +1,13 @@
 ﻿// From https://learn.microsoft.com/en-us/visualstudio/debugger/debugging-absolute-beginners?view=vs-2022&tabs=csharp
 
+// Expected Output:
+//  Tadpole  400,  Spiral
+//  Pinwheel  25,  Spiral
+//  Cartwheel, 500,  Lenticular
+//  Small Magellanic Cloud 0.2,  Irregular
+//  Andromeda  3,  Spiral
+//  Maffei 1,  11,  Elliptical
+
 //NOTES: Quick Watch, Add Watch
 namespace _02_galaxies_debugging
 {
@@ -22,15 +30,6 @@ namespace _02_galaxies_debugging
                 Console.WriteLine(theGalaxy.Name + "  " + theGalaxy.MegaLightYears + ",  " + theGalaxy.GalaxyType);
             }
             Console.ReadKey();
-
-            // Expected Output:
-            //  Tadpole  400,  Spiral
-            //  Pinwheel  25,  Spiral
-            //  Cartwheel, 500,  Lenticular
-            //  Small Magellanic Cloud 0.2,  Irregular
-            //  Andromeda  3,  Spiral
-            //  Maffei 1,  11,  Elliptical
-
         }
     }
 
