@@ -8,6 +8,26 @@ But:
  for multiples of both three and five, print FizzBuzz (instead of the number)
 */
 
+// Expected Output:
+// 1
+// 2
+// Fizz
+// 4
+// Buzz
+// Fizz
+// 7
+// 8
+// Fizz
+// Buzz
+// 11
+// Fizz
+// 13
+// 14
+// FizzBuzz
+// 16
+// 17
+// ...
+
 //NOTES: breakpoints, autos/local, conditional breakpoints
 
 namespace _01_fizzbuzz_debugging
@@ -20,42 +40,42 @@ namespace _01_fizzbuzz_debugging
             {
                 if (i % 3 == 0)
                 {
-                    Console.WriteLine("Fizz");
+                    PrintFizz();
                 }
                 else if (i % 5 == 0)
                 {
-                    Console.WriteLine("Buzz");
+                    PrintBuzz();
                 }
                 else if (i % 3 == 0 && i % 5 == 0)
                 {
-                    Console.WriteLine("FizzBuzz");
+                    PrintFizzBuzz();
                 }
                 else
                 {
-                    Console.WriteLine(i);
+                    PrintNumber(i);
                 }
             }
-            Console.ReadKey();
+            Console.ReadKey();                      
+        }
 
-            // Expected Output:
-            // 1
-            // 2
-            // Fizz
-            // 4
-            // Buzz
-            // Fizz
-            // 7
-            // 8
-            // Fizz
-            // Buzz
-            // 11
-            // Fizz
-            // 13
-            // 14
-            // FizzBuzz
-            // 16
-            // 17
-            // ...
+        private static void PrintFizz()
+        {
+            Console.WriteLine("Fizz");
+        }
+
+        private static void PrintBuzz()
+        {
+            Console.WriteLine("Buzz");
+        }
+
+        private static void PrintFizzBuzz()
+        {
+            Console.WriteLine("FizzBuzz");
+        }
+
+        private static void PrintNumber(int number)
+        {
+            Console.WriteLine(number);
         }
     }
 }
